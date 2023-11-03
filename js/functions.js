@@ -138,7 +138,7 @@ form_register.addEventListener("submit", name_event => {
     name_event.preventDefault();
     let info = "";
     console.log(nombres.value);
-    if(nombres.value.length <= 2 || apellidos.value.length <= 2){
+    if(nombres.value.length <= 2 || apellidos.v0alue.length <= 2){
         alert("NOMBRES Y/O APELLIDOS INVALIDOS")
     }
     else{
