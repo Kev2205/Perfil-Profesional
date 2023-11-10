@@ -47,7 +47,11 @@ var boolean = true; //flase
 var array_num = [1, 2, 3, 45, 3.4, 1.2];
 var array_tex = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
 var array_mix = [1, "a", 2, "c"];
-var_mul =[
+var array_mul =[
+    {name: "wilder", last_name:"Duarte",age:31},
+    {name: "Anyi", last_name:"Martinez",age:32},
+    {name: "Celeste", last_name:"Duarte",age:1},
+    {name: "Antonella", last_name:"Duarte",age:2},
     
 ]
 
@@ -99,14 +103,14 @@ for (let j = 0; j<array_tex.length; j++ ){
 //WHILE
 let f=0;
 while (f<array_tex.length){
-    console.log(array_tex[f] + (f+1));
+    console.log(array_tex[f] + " " + (f+1));
     f++;
 }
 
 //DO WHILE
 let m = 0;
 do{
-    console.log(array_tex[m] + (m+1));
+    console.log(array_tex[m] + " " +(m+1));
     m++;
 }
 while(m<array_tex.length);
@@ -138,7 +142,7 @@ form_register.addEventListener("submit", name_event => {
     name_event.preventDefault();
     let info = "";
     console.log(nombres.value);
-    if(nombres.value.length <= 2 || apellidos.v0alue.length <= 2){
+    if(nombres.value.length <= 2 || apellidos.value.length <= 2){
         alert("NOMBRES Y/O APELLIDOS INVALIDOS")
     }
     else{
@@ -146,3 +150,29 @@ form_register.addEventListener("submit", name_event => {
     }
     information.innerText = info;
 })
+
+function load_page(){
+    document.getElementById("nombres").focus();
+    document.getElementById("apellidos").disabled = true;
+    let date = new Date();
+    console.log(date.getSeconds())
+    for(let j=0;j<array_mul.length;j++){
+        console.log(array_mul[j].last_name);
+    }
+}
+
+function validate(){
+    
+    let nombres = document.getElementById("nombres").value;
+    if(nombres.length > 2){
+       // nombres.style.backgroundColor = "green";
+        document.getElementById("apellidos").disabled = false;    
+        document.getElementById("apellidos").focus();
+        //document.getElementById("nombres").value = "";
+        //alert(nombres.concat(" Delgado"));
+       // alert(nombres.charAt());
+       //alert(nombres.indexOf("K"));
+       //alert(nombres.split(" "));
+    }
+}
+
