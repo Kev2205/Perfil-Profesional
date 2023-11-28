@@ -41,6 +41,7 @@ body{
     background-size: cover;
     clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
     z-index: -1;
+    
 }
 
 /* nav */
@@ -162,7 +163,7 @@ body{
 
 .options{
     background-color: #e5e5f7;
-    background-image: linear-gradient(#444cf7 0.5px, transparente 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-image: linear-gradient(rgb(7, 148, 70) 247, 98) 0.5px, transparente 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: cover;
     background-position: 0 0, 10px 10px;
     overflow: hidden;
@@ -189,10 +190,10 @@ body{
     display: block;
 }
 
-/* slider */
+/* testimonys */
 
 .testimony{
-    background-color: #ffffff;
+    background-color: rgb(250, 244, 237);
 }
 
 .testimony_container{
@@ -212,7 +213,6 @@ body{
     grid-row: 1/2;
     opacity: 0;
     pointer-events: none;
-
 }
 
 .testimony_body--show{
@@ -231,7 +231,6 @@ body{
 
 .testimony_texts{
     max-width: 700px;
-
 }
 
 .testimony_course{
@@ -246,7 +245,7 @@ body{
     cursor: pointer;
 }
 
-/* questions*/
+/* Questions */
 
 .questions{
     text-align: center;
@@ -258,13 +257,12 @@ body{
     gap: 2em;
     padding-top: 50px;
     padding-bottom: 100px;
-
 }
 
 .questions_padding{
     padding: 0;
     transition: padding .3s;
-    border: 3px solid #5454d4;
+    border: 1px solid #5454D4;
     border-radius: 6px;
 }
 
@@ -297,7 +295,7 @@ body{
     align-items: center;
     align-self: flex-end;
     margin-left: 10px;
-    transition: transform .3s;
+    transition:  transform .3s;
 }
 
 .questions_arrow--rotate{
@@ -323,7 +321,7 @@ body{
 /* footer */
 
 .footer {
-    background-color: #1d293f;
+    background-color: #0b0c0c;
 }
 
 .footer_title{
